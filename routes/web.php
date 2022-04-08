@@ -5,6 +5,7 @@ use App\Http\Controllers\RoomController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\BallroomController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\Entertainment;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,3 +53,5 @@ Route::post('logout', [LoginController::class, 'logout']);
 Route::get('register', [RegisterController::class, 'index']);
 Route::post('register', [RegisterController::class, 'store']);
 
+// entertainment page
+Route::get('entertainment', [Entertainment::class, 'index']);
