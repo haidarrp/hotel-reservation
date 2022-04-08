@@ -34,23 +34,25 @@
   <link href="/assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link id="pagestyle" href="/assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/dropzone.min.css" type="text/css" />
   <!-- JQuery -->
   <script src="/assets/js/jquery.js"></script>
+  <script src="/assets/js/dropzone.min.js"></script>
 </head>
 
 <body class="g-sidenav-show  bg-gray-100">
-  
-    @include('partials/sidenav')
+
+  @include('partials/sidenav')
 
   <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ">
     <!-- Navbar -->
     @include('partials.navbar')
     <!-- End Navbar -->
     <div class="container-fluid py-4">
-        
-        @yield('content')
-      
-        @include('partials.footer')
+
+      @yield('content')
+
+      @include('partials.footer')
     </div>
   </main>
   <!--   Core JS Files   -->
